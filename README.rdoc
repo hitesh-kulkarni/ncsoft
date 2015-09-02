@@ -1,0 +1,29 @@
+RSS API
+
+The objective of this task is to create an api to be called via AJAX and provide data to the front-end. It should be written entirely in php(frameworks are ok to use) and output valid JSON. There is no need to provide any front-end code for this.
+
+Requirements:
+
+1.    Accept a url parameter for any rss newsfeed.
+
+2.    JSON Output should contain:
+
+	a.    Language(the feed can be localized)
+
+	b.    Date(formatted as August 31, 2015)
+
+	c.    Title
+
+	d.    Excerpt
+
+
+Class for fetching RSS feeds
+This class fetches RSS feeds and converts them into JSON/JSONP responses for HTTP calls.
+
+This API can be called using URL 
+
+(For JSONP)
+http://localhost:8888/test/ncsoft/?callback=&feed_url=http://www.npr.org/rss/rss.php?id=1003 
+OR 
+(For JSON)
+http://localhost:8888/test/ncsoft/?feed_url=http://www.npr.org/rss/rss.php?id=1003 
